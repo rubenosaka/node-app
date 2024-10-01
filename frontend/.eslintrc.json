@@ -1,0 +1,13 @@
+{
+  "extends": [
+    "../../.eslintrc.json",
+    "plugin:vue/vue3-recommended",
+    "@vue/eslint-config-prettier"
+  ],
+  "env": {
+    "browser": true
+  },
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser"
+  }
+}
