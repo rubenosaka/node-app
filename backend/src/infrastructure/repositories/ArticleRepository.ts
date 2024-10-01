@@ -1,4 +1,4 @@
-import { Article } from "../../domain/models/Article";
+import { Article } from '../../domain/models/Article';
 
 export class ArticleRepository {
   private articles: Article[] = [];

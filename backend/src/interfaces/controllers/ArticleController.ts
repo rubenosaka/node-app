@@ -1,6 +1,6 @@
-import { Request, Response } from "express";
-import { ArticleService } from "../../application/services/ArticleService";
-import { ArticleDto } from "../../application/dtos/ArticleDto";
+import { Request, Response } from 'express';
+import { ArticleService } from '../../application/services/ArticleService';
+import { ArticleDto } from '../../application/dtos/ArticleDto';
 
 const articleService = new ArticleService();
 

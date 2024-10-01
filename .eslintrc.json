@@ -2,14 +2,26 @@
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
     "prettier"
   ],
   "plugins": ["prettier"],
   "rules": {
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "linebreak-style": ["off"],
+    "no-console": "warn",
+    "eqeqeq": ["error", "always"]
   },
   "env": {
     "node": true,
     "browser": true
+  },
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "project": "./tsconfig.json",
+    "sourceType": "module",
+    "ecmaVersion": 2020,
+    "extraFileExtensions": [".vue"]
   }
 }
