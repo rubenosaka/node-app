@@ -23,5 +23,12 @@
     "sourceType": "module",
     "ecmaVersion": 2020,
     "extraFileExtensions": [".vue"]
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {
+        "project": "./tsconfig.json"
+      }
+    }
   }
 }

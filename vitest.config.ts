@@ -5,5 +5,11 @@ export default defineConfig({
     globals: true,
     environment: 'node',
     include: ['backend/__tests__/**/*.test.ts'],
+    alias: {
+      '@application': '/backend/src/application',
+      '@domain': '/backend/src/domain',
+      '@interfaces': '/backend/src/interfaces',
+      '@infrastructure': '/backend/src/infrastructure',
+    },
   },
 });

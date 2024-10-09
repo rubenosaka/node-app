@@ -1,5 +1,5 @@
-import { ArticleDto } from '../../../src/application/dtos/ArticleDto';
-import { ArticleService } from '../../../src/application/services/ArticleService';
+import { ArticleDto } from '@application/dtos/ArticleDto';
+import { ArticleService } from '@application/services/ArticleService';
 
 describe('Application > Services > ArticleService', () => {
   let articleService: ArticleService;
@@ -8,7 +8,7 @@ describe('Application > Services > ArticleService', () => {
     articleService = new ArticleService();
   });
 
-  it('should create a new article', () => {
+  test('should create a new article', () => {
     const articleDto: ArticleDto = {
       title: 'Test Article',
       content: 'This is a test article',
@@ -23,7 +23,7 @@ describe('Application > Services > ArticleService', () => {
     expect(newArticle.author).toBe('Test Author');
   });
 
-  it('should return all articles', () => {
+  test('should return all articles', () => {
     const articleDto1: ArticleDto = {
       title: 'First Article',
       content: 'Content of first article',
